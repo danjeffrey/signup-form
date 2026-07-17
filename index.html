@@ -4,56 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <linf rel="" stylesheet" href="signup.css" type="text/css"></linf>
+    <link rel="stylesheet" href="signup.css" type="text/css">
+    <script src="signup.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 
 <body>
-    <div id="left">
-        <div id="imageBackground">            
-            <img href="image.png"></img>
+    <div id="mainMain">
+        <div id="leftArea">
+            <div id="logoContent">
+                <img id="logoImage" src="logo.png"></img>
+                <div id="odinText">ODIN</div>
+            </div>
+            <div id="logoBackground">
+            </div>
         </div>
-        <div id="logo">
-            <img id="logoImage" href="logo.png"></img>
-            <div id="odinNameDiv">ODIN</div>
+        <div id="mainForm">
+            <div id="description">
+                <p id="descrPara1" class="description">This is not a real online service! You know you need something
+                    like
+                    this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p id="descrPara2" class="description">You <span class="emphasis">know</span> you want to.</p>
+            </div>
+            <form id="theForm">
+                <div id="formBody">
+                    <div id="formTitle">Let's do this!</div>
+                    <div id="formRow1" class="formRow">
+                        <div class="formColumn">
+                            <label for="name_first">First Name</label>
+                            <input id="name_first" name="name_first" minlength="1" required></input>
+                        </div>
+                        <div class="formColumn gap">
+                        </div>
+                        <div class="formColumn">
+                            <label for="name_last">Last Name</label>
+                            <input id="name_last" name="name_last" minlength="2" required></input>
+                        </div>
+                    </div>
+                    <div id="formRow2" class="formRow">
+                        <div class="formColumn">
+                            <label for="email">eMail</label>
+                            <input type="email" id="email" name="email" minlength="3"
+                                placeholder="name@example.com"></input>
+                        </div>
+                        <div class="formColumn gap">
+                        </div>
+                        <div class="formColumn">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="text" pattern="^\d{3}-\d{3}-\d{4}$"
+                                placeholder="123-456-7890"></input>
+                        </div>
+                    </div>
+                    <div id="formRow3" class="formRow">
+                        <div class="formColumn">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required></input>
+                        </div>
+                        <div class="formColumn gap">
+                        </div>
+                        <div class="formColumn">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="password" id="passwordConfirm" name="passwordConfirm" required></input>
+                        </div>
+                        <div class="formColumn gap">
+                        </div>
+                        <div class="formColumn">
+                            <label for="passwordError">&nbsp;</label>
+                            <span name="passwordError" id="passwordError" class="passwordError"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="divFormFooter" class="divFormFooter">
+                    <button id="btnSubmit" type="submit">Create Account</button>
+                    <div id="formFooter" class="formFooter">Already have a login? <a href=whatever">Log In</a></div>
+                </div>
+            </form>
         </div>
     </div>
-    <div id="mainForm">
-        <div id="description">
-            <p id="descrPara1" class="description">This is not a real online service! You know you need something like
-                this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <p id="descrPara2" class="description">You know you want to.</p>
-        </div>
-        <form id="theForm">
-            <p id="formTitle">Let's do this!</p>
-            <div id="formCol1" class="formColumn">
-                <label for="name_first">First Name</label>    
-                <input id="name_first" name="name_first"></input>    
-                <label for="email">eMail</label>    
-                <input type="email" id="email" name="email"></input>    
-                <label for="password">Password</label>    
-                <input type="password" id="password" name="password"></input>    
-            </div>
-            <div id="formCol2" class="formColumn">
-                <label for="name_last">Last Name</label>    
-                <input id="name_last" name="name_last"></input>    
-                <label for="phone">Phone Number</label>    
-                <!-- TODO: Use a pattern vaidator!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                <input id="phone" name="phone"></input>    
-                <label for="passwordConfirm">Confirm Password</label>    
-                <input type="password" id="passwordConfirm" name="passwordConfirm"></input>                    
-            </div>            
-            <div id="divFormFooter" class="divFormFooter">
-                <button id="btnSubmit" type="submit">Create Account</button>                
-                <p id="formFooter" class="formFooter">Already have a login? <a href=whatever">Log In</a></p>
-            </div>
-        </form>
-    
-    </div>
-
-
-
-
 </body>
 
 </html>

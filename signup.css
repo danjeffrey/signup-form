@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Urban Blocker";
+  src: url("UrbanBlocker.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+}
+
+#mainMain {
+  display: flex;
+  justify-content: left;
+  height: 535px;
+}
+
+#leftArea {
+  background-image: url("Curly2.jpg");
+  min-width: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#logoBackground {
+  position: relative;
+  top: 200px;
+  background-color: black;
+  height: 80px;
+  opacity: 50%;
+}
+
+#logoContent {
+  position: relative;
+  top: 265px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Urban Blocker", sansserif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#logoImage {
+  height: 50px;
+  opacity: 100%;
+}
+
+#mainForm {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+
+  height: 535px;
+}
+
+#description {
+  padding-left: 30px;
+  padding-top: 60px;
+  background-color: #f5f5f5;
+  flex: 1;
+}
+
+#theForm {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 345px;
+}
+
+#formBody {
+  padding-left: 30px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+  flex: 0 0 180px;
+}
+
+#divFormFooter {
+  padding-left: 30px;
+  padding-top: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 25px;
+  flex: 1;
+}
+
+label {
+  font-family: "Open Sans Condensed";
+  font-size: small;
+  font-weight: normal;
+}
+
+input {
+  border-radius: 3px;
+  width: 135px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  border-color: #e5e7eb;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
+.formRow {
+    display: flex;
+} 
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* form label {
+      display: block;
+} */
+
+.gap {
+  width: 20px;
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+#btnSubmit {
+  border-radius: 3px;
+  background-color: #98a066;
+  color: white;
+  height: 25px;
+  width: 120px;
+  font-weight: bold;
+}
+
+.passwordError {
+  color: red;
+  font-weight: normal;}    
+
